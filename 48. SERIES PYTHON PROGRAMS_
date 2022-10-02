@@ -1,0 +1,271 @@
+1)
+Write a program to generate the following series --- 1,4,9,16,25, .... 
+
+Input format: 
+
+The input containing an integer which denotes 'n' 
+
+Output format: 
+
+Print the series and refer the sample output for formatting
+
+Sample Input :
+
+7
+
+Sample Output:
+
+1 4 9 16 25 36 49 
+
+#SOLUTION
+#python
+n=int(input())
+a=1
+for i in range(1,n+1):
+    res=a**2
+    a=a+1
+    print(res,end=' ')
+    
+2)
+Write a program to generate the following series --- 6,11,21,36,56,... 
+
+Input format: 
+
+The input containing an integer which denotes 'n' 
+
+Output format: 
+
+Print the series and refer the sample output for formatting.
+
+Sample Input:
+
+5
+
+Sample Output:
+
+6 11 21 36 56 
+#SOLUTION
+#python
+n=int(input())
+a=6
+d=5
+for i in range(1,n+1):
+    print(a, end=' ')
+    a=a+d
+    d=d+5
+ 
+3)
+Write a program to generate the first n terms in the series --- 3, 9, 27, 81,...,... 
+
+Input format: 
+
+The input containing an integer which denotes 'n' 
+
+Output format: 
+
+Print the series and refer the sample output for formatting
+
+Sample Input & Output:
+
+5
+
+3 9 27 81 243 
+#SOLUTION
+#python
+n=int(input())
+a=1
+for i in range(1,n+1):
+    res=3**a
+    a=a+1
+    print(res, end=' ')
+ 
+4)
+Write a program to generate the following series --- 0.5,1.5,4.5,13.5,...
+
+ Input format: 
+
+The input containing an integer which denotes 'n' 
+
+Output format: 
+
+Print the series and refer the sample output for formatting.
+
+Sample Input & Output:
+
+5
+
+0.5 1.5 4.5 13.5 40.5 
+#SOLUTION
+#python
+n=int(input())
+a=0.5
+for i in range(1,n+1):
+    print(a, end=' ')
+    res=a*3
+    a=res
+ 5)
+ Write a program to generate the following series --- 121,225,361,... 
+
+Input format: 
+
+The input containing an integer which denotes 'n' 
+
+Output format: 
+
+Print the series and refer the sample output for formatting.
+
+Sample Input & Output:
+
+5
+
+121 225 361 529 729 
+
+
+#SOLUTION
+#python
+n=int(input())
+a=11
+for i in range(1,n+1):
+    res=a**2
+    a=a+4
+    print(res, end=' ')
+ 
+ 6)
+ Write a program to generate the following series --- 0,2,8,14,...,34 
+
+Input format: 
+
+The input containing an integer which denotes 'n'
+
+Output format: 
+
+Print the series and refer the sample output for formatting.
+
+Sample Input & Output:
+
+5
+
+0 2 8 14 24 
+
+#SOLUTION
+#python
+n=int(input())
+a=0
+i=1
+while (i<=n):
+    if(i%2)==0:
+        a=(i**2)-2 #a=pow(i,2)-2
+        print(a, end=' ')
+    else:
+        a=(i**2)-1
+        print(a, end=' ')
+        
+    i+=1
+
+7)
+Write a program to generate the following series --- 1, 2.0, 3.0, 6.0, 9.0, 18.0, 27.0,... 
+
+Input format: 
+
+The input containing an integer which denotes 'n' 
+
+Output format: 
+
+Print the series and refer the sample output for formatting
+
+Sample Input & Output:
+
+5
+
+1 2.0 3.0 6.0 9.0 
+#SOLUTION
+#python
+n=int(input())
+a=1
+for i in range(1,n+1):
+    if (i%2)==0:
+        a=a*2
+        print(a, end=' ')
+    else:
+        if(a==1):
+            print(a, end=' ')
+        else:
+            a=(a*3)/2
+            print(a, end=' ')
+            
+8)
+Write a program to generate the following series 4, 5, 9, 18, 34,... 
+
+Input format: 
+
+The input containing an integer which denotes 'n' 
+
+Output format: 
+
+Print the series and refer the sample output for formatting.
+
+Sample Input & Output:
+
+5
+
+4 5 9 18 34 
+
+#SOLUTION
+#python
+number=int(input())
+start=4
+i=1
+while(i<=number):
+    print(start,end=" ")
+    start=start+i**2
+    i+=1
+9)
+Write a program to generate the following series 2, 3, 8, 63, 3968
+
+Input format: 
+
+The input containing an integer which denotes 'n' 
+
+Output format: 
+
+Print the series and refer the sample output for formatting
+
+Sample Input & Output:
+
+5
+
+2 3 8 63 3968 
+
+#SOLUTION
+#python
+n=int(input())
+a=2
+for i in range(1,n+1):
+    print(a, end=' ')
+    a=(a**2)-1
+10)
+Write a program to generate the following series 95.0, 115.5, 138.0,..., 189.0 
+
+Input format: 
+
+The input containing an integer which denotes 'n' 
+
+Output format:
+
+Print the series and refer the sample output for formatting
+
+Sample Input & Output:
+
+5
+
+95.0 115.5 138.0 162.5 189.0 
+
+#SOLUTION
+#python
+n=int(input())
+a=95.0
+b=20.5
+for i in range(1,n+1):
+    print(a,end=' ')
+    a=a+b
+    b=b+2.0
